@@ -1,6 +1,6 @@
 backend:
   name: github
-  repo: abdnafees/abdnafees.github.io
+  repo: abdnafees/abdnafees.com
   branch: master
   site_domain: www.abdnafees.com
   commit_messages:
