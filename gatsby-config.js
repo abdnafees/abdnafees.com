@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     // edit below
-    title: `Abdullah Nafees`,
+    title: `The Turing Guy`,
     author: {
       name: `Abdullah Nafees`,
       summary: `who lives and works in Lahore building useful things.`,
