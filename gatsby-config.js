@@ -1,12 +1,17 @@
 module.exports = {
   siteMetadata: {
     // edit below
-    title: `Gatsby Starter Personal Blog`,
-    author: `Gatsby`,
-    description: `A starter personal blog with styled components, dark mode, and Netlify CMS.`,
-    siteUrl: `https://gatsby-starter-blog-demo.netlify.com/`,
+    title: `Abdullah Nafees`,
+    author: {
+      name: `Abdullah Nafees`,
+      summary: `who lives and works in Lahore building useful things.`,
+    },
+    description: `A personal blog`,
+    siteUrl: `https://abdnafees.com/`,
     social: {
-      twitter: `gatsbyjs`,
+      twitter: `abdnafees`,
+      linkedIn: `abdnafees`,
+      instagram: `abdnafees`
     },
   },
   plugins: [
@@ -65,20 +70,19 @@ module.exports = {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
         // edit below
-        // trackingId: `ADD YOUR TRACKING ID HERE`,
+        trackingId: `UA-139011344-1`,
       },
     },
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Gatsby Starter Blog`,
-        short_name: `GatsbyJS`,
+        name: `Abdullah Nafees`,
+        short_name: `Abdullah`,
         start_url: `/`,
         background_color: `#ffffff`,
         theme_color: `#663399`,
         display: `minimal-ui`,
-        // edit below
-        icon: `content/assets/gatsby-icon.png`,
+        icon: `content/assets/favicon/android-icon-192x192.png`,
       },
     },
     {

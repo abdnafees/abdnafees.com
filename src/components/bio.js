@@ -22,7 +22,7 @@ function Bio() {
           <Container>
             <Image
               fixed={data.avatar.childImageSharp.fixed}
-              alt={author}
+              alt={author.name}
               style={{
                 marginRight: rhythm(1 / 2),
                 marginBottom: 0,
@@ -34,12 +34,11 @@ function Bio() {
               }}
             />
             <p>
-              Written by <strong>{author}</strong>, a framework built upon the
-              React library.
-              {` `}
-              <a href={`https://twitter.com/${social.twitter}`}>
-                Follow me on Twitter
-              </a>
+            Written by <strong>{author.name}</strong> {author.summary}
+            {` `}
+            You should follow him on <a href={`https://twitter.com/${social.twitter}`}>Twitter</a>.
+            {` `}
+            He likes to share his photos and stories often on <a href={`https://instagram.com/${social.instagram}`}>Instagram</a>.
             </p>
           </Container>
         )
@@ -50,7 +49,7 @@ function Bio() {
 
 const bioQuery = graphql`
   query BioQuery {
-    avatar: file(absolutePath: { regex: "/gatsby-icon.png/" }) {
+    avatar: file(absolutePath: { regex: "/profile-pic.jpg/" }) {
       childImageSharp {
         fixed(width: 50, height: 50) {
           ...GatsbyImageSharpFixed
@@ -59,7 +58,10 @@ const bioQuery = graphql`
     }
     site {
       siteMetadata {
-        author
+        author {
+          name
+          summary
+        }
         social {
           twitter
         }
@@ -67,7 +69,6 @@ const bioQuery = graphql`
     }
   }
 `
-
 const Container = styled.div`
   display: flex;
 `

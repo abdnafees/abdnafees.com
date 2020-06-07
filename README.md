@@ -1,59 +1,21 @@
-<!-- AUTO-GENERATED-CONTENT:START (STARTER) -->
-<p align="center">
-  <a href="https://www.gatsbyjs.org">
-    <img alt="Gatsby" src="https://www.gatsbyjs.org/monogram.svg" width="60" />
-  </a>
-</p>
-<h1 align="center">
-  Gatsby's personal blog starter
-</h1>
+# abdnafees.com
 
-<img alt="screesnhot" src="./screenshot.png">
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT) [![Netlify Status](https://api.netlify.com/api/v1/badges/2b39b20a-3f72-4748-b83e-17bb16be4801/deploy-status)](https://app.netlify.com/sites/focused-easley-29881e/deploys)
 
-This starter is a fork of Gatsby Starter Blog, the most popular starter by far – with second place being Gatsby Starter Netlify CMS. So I decided to combine the 2!
+Abdullah's personal website running on Gatsby, React, Node.js and Netlify CMS.
 
-## 🚀 Quick start
+**Note**: The source for this site was not created to be a template or theme, but for my own use. Feel free to take whatever inspiration from it that you want, but this code was not written with the intention of being, cloned and deployed. As such, I do not provide support or guidance for doing that.
 
-1.  **Create a Gatsby site.**
+## Acknowledgements
 
-    Use the Gatsby CLI to create a new site, specifying the blog starter.
+- Gatsby - [Gatsby Starter Blog](https://github.com/gatsbyjs/gatsby-starter-blog)
+- Tania Rascia - [taniarascia.com](https://www.taniarascia.com/)
 
-    ```sh
-    # create a new Gatsby site using the blog starter
-    gatsby new my-blog-starter https://github.com/thomaswang/gatsby-personal-starter-blog
-    ```
+## Author
 
-1.  **Start developing.**
+- [Abdullah Nafees](https://www.abdnafees.com)
 
-    Navigate into your new site’s directory and start it up.
 
-    ```sh
-    cd my-blog-starter/
-    gatsby develop
-    ```
+## License
 
-1.  **Open the source code and start editing!**
-
-    Your site is now running at `http://localhost:8000`!
-
-    _Note: You'll also see a second link: _`http://localhost:8000/___graphql`_. This is a tool you can use to experiment with querying your data. Learn more about using this tool in the [Gatsby tutorial](https://www.gatsbyjs.org/tutorial/part-five/#introducing-graphiql)._
-
-    Open the `my-blog-starter` directory in your code editor of choice and edit `src/pages/index.js`. Save your changes and the browser will update in real time!
-
-## 🎓 Learning Gatsby
-
-Looking for more guidance? Full documentation for Gatsby lives [on the website](https://www.gatsbyjs.org/). Here are some places to start:
-
-- **For most developers, we recommend starting with our [in-depth tutorial for creating a site with Gatsby](https://www.gatsbyjs.org/tutorial/).** It starts with zero assumptions about your level of ability and walks through every step of the process.
-
-- **To dive straight into code samples, head [to our documentation](https://www.gatsbyjs.org/docs/).** In particular, check out the _Guides_, _API Reference_, and _Advanced Tutorials_ sections in the sidebar.
-
-## 📔 Learning Netlify CMS with Gatsby
-
-Start from [this point](https://www.gatsbyjs.org/docs/sourcing-from-netlify-cms/#authenticating-with-github) in the Gatsby documentation to finish the set up for your personal Netlify CMS with authentication.
-
-## 💫 Deploy
-
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/thomaswangio/gatsby-personal-starter-blog)
-
-<!-- AUTO-GENERATED-CONTENT:END -->
+This project is open source and available under the [MIT License](LICENSE).

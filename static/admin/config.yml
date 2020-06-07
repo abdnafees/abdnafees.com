@@ -1,18 +1,30 @@
 backend:
   name: github
-  repo: thomaswang/gatsby-personal-starter-blog
+  repo: abdnafees/abdnafees.github.io
+  branch: master
+  site_domain: www.abdnafees.com
+  commit_messages:
+    create: 'Create {{collection}} “{{slug}}”'
+    update: 'Update {{collection}} “{{slug}}”'
+    delete: 'Delete {{collection}} “{{slug}}”'
+    uploadMedia: '[skip ci] Upload “{{path}}”'
+    deleteMedia: '[skip ci] Delete “{{path}}”'
 
-media_folder: content/assets
-public_folder: ../assets
+
+media_folder: "content/assets"
+public_folder: "../assets"
 
 collections:
-  - name: blog
-    label: Blog
-    folder: content/blog
+  - name: "blog"
+    label: "Blog"
+    folder: "content/blog"
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    editor:
+      preview: true
     create: true
     fields:
-      - { name: path, label: Path }
       - { name: date, label: Date, widget: date }
-      - { name: title, label: Title }
+      - { name: title, label: Title widget: text}
       - { name: description, label: Description }
+      - { name: "featuredimage", label: "Featured Image", widget: image}
       - { name: body, label: Body, widget: markdown }
