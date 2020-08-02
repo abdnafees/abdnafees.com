@@ -2,6 +2,7 @@ import React from "react"
 import { Link, graphql } from "gatsby"
 import { MDXRenderer } from "gatsby-plugin-mdx"
 
+import Image from "../components/prew-image"
 import Bio from "../components/bio"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
@@ -87,6 +88,13 @@ export const pageQuery = graphql`
         title
         date(formatString: "MMMM DD, YYYY")
         description
+        image {
+            childImageSharp {
+                fluid(maxWidth: 2048, quality: 100) {
+                ...GatsbyImageSharpFluid
+                }
+            }
+        }
       }
     }
   }

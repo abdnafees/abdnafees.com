@@ -22,15 +22,14 @@ class IndexPage extends React.Component {
             👋
           </span>
         </h1>
+        <Link to="/blog/">
+          <Button marginTop="35px" marginBottom="35px" >My Blog</Button>
+        </Link>
         <p>
           I am a computer scientist and engineer working as a Systems Engineer at a
           health tech company in Lahore, Pakistan. And, have conversations with cool people on a weekly podcast called <a href="https://anchor.fm/makerbaithak">Baithak</a>.
           You can connect with me on <a href="https://www.linkedin.com/in/abdnafees/">LinkedIn</a> for regular updates about my work.
         </p>
-        <p>Follow the link to read my weekly blog posts.</p>
-        <Link to="/blog/">
-          <Button marginTop="35px">My Blog</Button>
-        </Link>
       </Layout>
     )
   }

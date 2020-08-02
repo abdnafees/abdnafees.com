@@ -19,6 +19,9 @@ collections:
     label: "Blog"
     folder: "content/blog"
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    path: '{{slug}}/index'
+    media_folder: "content/assets"
+    public_folder: "../assets"
     editor:
       preview: true
     create: true
@@ -26,4 +29,6 @@ collections:
       - { name: date, label: Date, widget: date }
       - { name: title, label: Title, widget: text}
       - { name: description, label: Description, widget: string }
+      - { name: image, label: Cover Image, widget: image}
       - { name: body, label: Body, widget: markdown }
+      

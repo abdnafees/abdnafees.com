@@ -1,4 +1,3 @@
- 
 import React from "react"
 import { Link } from "gatsby"
 import styled from "styled-components"
@@ -68,9 +67,12 @@ class Layout extends React.Component {
           <main>{children}</main>
         </div>
         <Footer>
-          © {new Date().getFullYear()}, Built with
+          © {new Date().getFullYear()},
           {` `}
-          <a href="https://www.gatsbyjs.org">Gatsby</a>
+          <a href="https://www.gatsbyjs.org"><img src="./content/gatsby-icon.png"/></a>
+          {` `}
+          <a href=""><img></img></a>
+          <a>Github</a>
         </Footer>
       </Wrapper>
     )
