@@ -12,7 +12,7 @@ backend:
 
 
 media_folder: "content/assets"
-public_folder: "../assets"
+public_folder: "/assets"
 
 collections:
   - name: "blog"
@@ -21,12 +21,12 @@ collections:
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
     path: '{{slug}}/index'
     media_folder: "content/assets"
-    public_folder: "../assets"
+    public_folder: "/assets"
     editor:
       preview: true
     create: true
     fields:
-      - { name: date, label: Date, widget: date }
+      - { name: date, label: Date, widget: datetime }
       - { name: title, label: Title, widget: text}
       - { name: description, label: Description, widget: string }
       - { name: image, label: Cover Image, widget: image}
