@@ -11,8 +11,8 @@ backend:
     deleteMedia: '[skip ci] Delete “{{path}}”'
 
 
-media_folder: "content/assets"
-public_folder: "/assets"
+media_folder: content/assets
+public_folder: /assets
 
 collections:
   - name: "blog"
@@ -20,8 +20,8 @@ collections:
     folder: "content/blog"
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
     path: '{{slug}}/index'
-    media_folder: "content/assets"
-    public_folder: "/assets"
+    media_folder: ''
+    public_folder: ''
     editor:
       preview: true
     create: true
